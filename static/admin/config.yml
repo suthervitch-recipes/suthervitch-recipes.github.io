@@ -28,12 +28,7 @@ collections:
       - { label: "Instructions", name: "body", widget: "markdown" }
       - label: "Tags"
         name: "tags"
-        widget: "list"
-        summary: '{{fields.tag}}'
-        field: 
-          label: Tag
-          name: tag
-          widget: select
-          multiple: false # Keep this false here
-          create: true
-          options: ["Italian", "Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
+        widget: "select"
+        multiple: true
+        create: true  # <--- THIS IS THE KEY LINE
+        options: ["Italian", "Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
