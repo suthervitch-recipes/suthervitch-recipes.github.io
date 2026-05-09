@@ -31,4 +31,4 @@ collections:
         widget: "select"
         multiple: true
         create: true # This allows you to add a NEW tag if it's not in the list
-        options: ["Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
+        options: ["Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick", "Italian"]
