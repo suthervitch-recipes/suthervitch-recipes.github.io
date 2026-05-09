@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Suthervitch Recipes</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Suthervitch Recipes</description>
+    <title>Tag1 on Suthervitch Recipes</title>
+    <link>http://localhost:1313/tags/tag1/</link>
+    <description>Recent content in Tag1 on Suthervitch Recipes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 08 May 2026 22:21:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>test</title>
       <link>http://localhost:1313/recipes/test/</link>
       <pubDate>Fri, 08 May 2026 22:21:00 +0000</pubDate>
       <guid>http://localhost:1313/recipes/test/</guid>
       <description>test</description>
-    </item>
-    <item>
-      <title>new-test-title</title>
-      <link>http://localhost:1313/recipes/new-test-title/</link>
-      <pubDate>Fri, 08 May 2026 22:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/recipes/new-test-title/</guid>
-      <description>new-test-desc</description>
     </item>
   </channel>
 </rss>

@@ -21,8 +21,9 @@ collections:
         widget: "object"
         required: false
         fields:
-          - { label: "Image", name: "image", widget: "image", required: false, default: "images/default-recipe.jpg" }
+          - { label: "Image", name: "image", widget: "image", required: false, default: "" }
           - { label: "Alt Text", name: "alt", widget: "string", required: false }
           - { label: "Caption", name: "caption", widget: "string", required: false }
       - { label: "Ingredients", name: "ingredients", widget: "list", summary: "{{fields.item}}" }
       - { label: "Instructions", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", required: false, hint: "e.g., Dessert, Asian, Quick" }
