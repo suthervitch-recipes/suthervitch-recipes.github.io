@@ -1,0 +1,32 @@
+{{- define "main" }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- .Content -}}
+</div>
+{{- end }}
+
+{{- $pages := .Paginator.Pages }}
+
+{{- range $pages }}
+<article class="post-entry">
+  <header class="entry-header">
+    <h2>{{ .Title }}</h2>
+  </header>
+  
+  <!-- This forces the description to show -->
+  <div class="entry-content">
+    <p>{{ .Description | default .Summary }}</p>
+  </div>
+  
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- range .Params.cover.image }}
+    <img src="{{ . | absURL }}">
+{{- end }}
+{{- end }}
+
+{{- end }}{{/* end main */}}
