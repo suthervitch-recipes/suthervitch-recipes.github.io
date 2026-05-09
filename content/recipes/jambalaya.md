@@ -2,7 +2,7 @@
 title: Jambalaya
 date: 2026-05-09T15:23:00
 description: ''
-portions: '6'
+portions: 6 servings
 prepTime: 20mins
 cookTime: 1h
 cover: null
