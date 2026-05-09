@@ -18,7 +18,7 @@
     <p>{{ .Description | default .Summary }}</p>
   </div>
 
-<!-- CLICKABLE TAGS SECTION -->
+  <!-- CLICKABLE TAGS SECTION -->
   {{- if .Params.tags }}
   <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap; position: relative; z-index: 10;">
     {{- range .Params.tags }}
@@ -35,8 +35,11 @@
     {{- partial "post_meta.html" . -}}
   </footer>
 
-  {{- if (and (isset .Params.cover "image") (ne .Params.cover.image "")) }}
-    <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 8px;">
+  <!-- SAFER IMAGE LOGIC -->
+  {{- if .Params.cover }}
+    {{- if and .Params.cover.image (ne .Params.cover.image "") }}
+      <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 8px;">
+    {{- end }}
   {{- end }}
 
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></a>
