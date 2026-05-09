@@ -21,3 +21,8 @@ summaryLength = 0
     description = true
     disableSpecial1stPost = true
     showDescription = true
+[params.searchConfig]
+    from_frontmatter = true
+    include_content = true
+    # This is the critical line to include tags in the search
+    fields = ["title", "content", "tags", "description", "categories"]
