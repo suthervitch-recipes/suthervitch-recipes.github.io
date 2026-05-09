@@ -26,4 +26,8 @@ collections:
           - { label: "Caption", name: "caption", widget: "string", required: false }
       - { label: "Ingredients", name: "ingredients", widget: "list", summary: "{{fields.item}}" }
       - { label: "Instructions", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        summary: "{{fields.tag}}" # This shows the tag name even when the row is closed
+        field: { label: "Tag", name: "tag", widget: "string" }
