@@ -30,5 +30,5 @@ collections:
         name: "tags"
         widget: "select"
         multiple: true
-        create: true  # <--- THIS IS THE KEY LINE
+        create: true # This must be at the same indentation level as 'widget'
         options: ["Italian", "Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
