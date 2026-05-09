@@ -41,16 +41,24 @@
     <p>{{ .Description | default .Summary }}</p>
   </div>
 
-  <!-- UPDATED TAG LOOP FOR OBJECT STYLE -->
+  <!-- HYBRID TAG LOOP (FIXES BUILD ERRORS) -->
   {{- if .Params.tags }}
   <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap; position: relative; z-index: 10;">
     {{- range .Params.tags }}
-    <li>
-      <!-- Accessing the 'tag' field within the object -->
-      <a href="{{ "tags/" | absURL }}{{ .tag | urlize }}/" style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: inherit; text-decoration: none;">
-        #{{ .tag }}
-      </a>
-    </li>
+      {{- $tagName := "" }}
+      {{- if reflect.IsMap . }}
+        {{- $tagName = .tag }}
+      {{- else }}
+        {{- $tagName = . }}
+      {{- end }}
+      
+      {{- if $tagName }}
+      <li>
+        <a href="{{ "tags/" | absURL }}{{ $tagName | urlize }}/" style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: inherit; text-decoration: none;">
+          #{{ $tagName }}
+        </a>
+      </li>
+      {{- end }}
     {{- end }}
   </ul>
   {{- end }}
