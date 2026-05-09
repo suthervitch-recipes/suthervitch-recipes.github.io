@@ -29,6 +29,7 @@ notes: |-
   Link:  https://spicysouthernkitchen.com/paul-prudhommes-chicken-and-tasso-jambalaya/
 
   ### 
+
   Reviews:
 
   Good
@@ -42,7 +43,8 @@ notes: |-
   Needed to add maybe 1/4cup of water
 
   Better than bouillon just under 3 tsp
-tags: []
+tags:
+  - Dinner
 ---
 
 Combine first 7 ingredients in a small bowl. Set aside.
