@@ -4,7 +4,7 @@
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
     
-    <!-- RECIPE INFO BAR (Visible only on the recipe page) -->
+    <!-- RECIPE INFO BAR -->
     <div class="recipe-info" style="display: flex; gap: 20px; font-size: 1rem; opacity: 0.9; margin: 15px 0; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--secondary);">
       {{- if .Params.portions }}<span>🍴 **Portions:** {{ .Params.portions }}</span>{{ end }}
       {{- if .Params.prepTime }}<span>⏱️ **Prep:** {{ .Params.prepTime }}</span>{{ end }}
@@ -12,19 +12,29 @@
     </div>
   </header>
 
-  <!-- FEATURED IMAGE -->
-  {{- if .Params.cover.image }}
-  <div class="post-entry">
-    <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}" style="width: 100%; border-radius: 12px; margin-bottom: 20px;">
+  <!-- INGREDIENTS SECTION -->
+  {{- if .Params.ingredients }}
+  <div class="recipe-ingredients" style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+    <h3 style="margin-top: 0;">🛒 Ingredients</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+      {{- range .Params.ingredients }}
+      <li style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <label style="display: flex; align-items: center; cursor: pointer;">
+          <input type="checkbox" style="margin-right: 12px;"> {{ . }}
+        </label>
+      </li>
+      {{- end }}
+    </ul>
   </div>
   {{- end }}
 
-  <!-- RECIPE CONTENT -->
+  <!-- INSTRUCTIONS (THE CONTENT) -->
   <div class="post-content">
+    <h3 style="margin-bottom: 15px;">👩‍🍳 Instructions</h3>
     {{- .Content -}}
   </div>
 
-  <!-- PERSONAL NOTES (Moved to the bottom of the recipe page) -->
+  <!-- PERSONAL NOTES -->
   {{- if .Params.notes }}
   <div class="personal-notes" style="background: rgba(255,255,0,0.05); padding: 20px; border-left: 4px solid #e6db74; margin-top: 40px; border-radius: 4px;">
     <h3 style="margin-top: 0; font-size: 1.2rem;">💡 Personal Notes & Tips</h3>
