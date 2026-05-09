@@ -33,13 +33,6 @@ collections:
 
       - { label: "Ingredients", name: "ingredients", widget: "list", summary: "{{fields.item}}" }
       
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        required: false
-        summary: "{{fields.tag}}"
-        field: { label: "Tag", name: "tag", widget: "string" }
-
       - { label: "Instructions", name: "body", widget: "markdown" }
 
       - label: "Personal Notes"
@@ -47,3 +40,11 @@ collections:
         widget: "markdown"
         required: false
         hint: "Your private tips, variations, or comments about this dish"
+
+      # Tags moved to the end
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        summary: "{{fields.tag}}"
+        field: { label: "Tag", name: "tag", widget: "string" }
