@@ -21,7 +21,7 @@ collections:
         widget: "object"
         required: false
         fields:
-          - { label: "Image", name: "image", widget: "image", required: false, default: "images/default-recipe.jpg" }
+          - { label: "Image", name: "image", widget: "image", required: false, default: "" }
           - { label: "Alt Text", name: "alt", widget: "string", required: false }
           - { label: "Caption", name: "caption", widget: "string", required: false }
       - { label: "Ingredients", name: "ingredients", widget: "list", summary: "{{fields.item}}" }
