@@ -28,7 +28,12 @@ collections:
       - { label: "Instructions", name: "body", widget: "markdown" }
       - label: "Tags"
         name: "tags"
-        widget: "select"
-        multiple: true
-        create: true # This allows you to add a NEW tag if it's not in the list
-        options: ["Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick", "Italian"]
+        widget: "list"
+        summary: '{{fields.tag}}'
+        field: 
+          label: Tag
+          name: tag
+          widget: select
+          multiple: false # Keep this false here
+          create: true
+          options: ["Italian", "Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
