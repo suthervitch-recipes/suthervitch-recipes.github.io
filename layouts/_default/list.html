@@ -41,7 +41,7 @@
     <p>{{ .Description | default .Summary }}</p>
   </div>
 
-  <!-- FIXED TAG LOOP: Uses standard Hugo/PaperMod list format -->
+  <!-- TAG LOOP -->
   {{- if .Params.tags }}
   <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap; position: relative; z-index: 10;">
     {{- range .Params.tags }}
@@ -58,12 +58,7 @@
     {{- partial "post_meta.html" . -}}
   </footer>
 
-  <!-- PERSONAL NOTES -->
-  {{- if .Params.notes }}
-  <div class="personal-notes" style="background: rgba(255,255,0,0.05); padding: 10px; border-left: 3px solid #e6db74; margin: 10px 0; font-style: italic; font-size: 0.9rem;">
-    <strong>Note:</strong> {{ .Params.notes | markdownify }}
-  </div>
-  {{- end }}
+  <!-- PERSONAL NOTES REMOVED FROM HERE -->
 
   {{- if .Params.cover }}
     {{- if and .Params.cover.image (ne .Params.cover.image "") }}
