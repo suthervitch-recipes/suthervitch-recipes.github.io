@@ -6,3 +6,4 @@ theme = 'PaperMod'
     showFullContents = false
     description = true
     disableSpecial1stPost = true
+    showDescription = true
