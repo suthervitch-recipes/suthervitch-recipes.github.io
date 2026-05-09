@@ -1,6 +1,6 @@
 ---
 title: Amatriciana
-date: 2026-05-09T15:10:00
+date: ''
 description: ''
 portions: '4'
 prepTime: 30 mins
