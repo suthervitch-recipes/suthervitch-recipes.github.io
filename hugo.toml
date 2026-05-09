@@ -1,6 +1,6 @@
 baseURL = 'https://suthervitch-recipes.github.io/'
 locale = 'en-us'
-title = 'Our Family Recipes'
+title = 'Suthervitch Recipes'
 theme = 'PaperMod'
 summaryLength = 0  # Move this HERE (outside of [params])
 
