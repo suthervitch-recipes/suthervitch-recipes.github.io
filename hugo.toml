@@ -13,3 +13,13 @@ summaryLength = 0  # Move this HERE (outside of [params])
 [taxonomies]
     tag = "tags"
     category = "categories"
+
+# Add JSON to outputs so Hugo builds the search index
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+# Add Search to your navigation menu
+[[menu.main]]
+    name = "Search"
+    url = "search/"
+    weight = 10
