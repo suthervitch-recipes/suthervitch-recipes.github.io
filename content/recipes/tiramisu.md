@@ -24,6 +24,6 @@ tags:
 
 _Notes_
 
-**_Alcohol:_** _Tiramisu can be made with or without alcohol. This recipe calls for coffee flavored liqueur because I like that it enhances the coffee flavor, but other options are marsala wine or brandy._  
-**_Make Ahead Instructions:_** _Tiramisu is even better when made in advance, allowing the flavors to blend! It will keep in the refrigerator for 2 to 3 days._
-**_Freezing Instructions:_** _Make completely, but don't dust with cocoa powder. Cover tightly with plastic wrap and then tinfoil and freeze for up to 3 months. Thaw in the refrigerator overnight and dust with cocoa powder a few hours before serving._
+\*\*_Alcohol:_\*\* _Tiramisu can be made with or without alcohol. This recipe calls for coffee flavored liqueur because I like that it enhances the coffee flavor, but other options are marsala wine or brandy._  
+\*\*_Make Ahead Instructions:_\*\* _Tiramisu is even better when made in advance, allowing the flavors to blend! It will keep in the refrigerator for 2 to 3 days._
+\*\*_Freezing Instructions:_\*\* _Make completely, but don't dust with cocoa powder. Cover tightly with plastic wrap and then tinfoil and freeze for up to 3 months. Thaw in the refrigerator overnight and dust with cocoa powder a few hours before serving._
