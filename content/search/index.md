@@ -2,5 +2,8 @@
 title: "Search"
 layout: "search"
 summary: "search"
-placeholder: "Search for ingredients, titles, or tags..."
+placeholder: "Search for ingredients..."
+_build:
+  list: never
+  render: always
 ---
