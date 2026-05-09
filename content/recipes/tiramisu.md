@@ -2,13 +2,10 @@
 title: Tiramisu
 date: 2026-05-08T22:33:00
 description: Creamy, delicious and unbelievably EASY tiramisu made with coffee soaked lady fingers, creamy mascarpone (no raw eggs!), and cocoa powder dusted on top.
-portions: "9 servings"
-prepTime: "20 mins"
-cookTime: "0 mins (Chilling required)"
-cover:
-  image: ""
-  alt: ""
-  caption: ""
+portions: 9 servings
+prepTime: 20 mins
+cookTime: 0 mins (Chilling required)
+cover: null
 ingredients:
   - 360 ml heavy whipping cream (1 ½ cups)
   - 225 g container mascarpone cheese (8 oz)
@@ -18,9 +15,9 @@ ingredients:
   - 45 ml Coffee flavored liqueur  optional (Kahlua or DaVinci brands) (3 tbsp)
   - 1 package Ladyfingers (7 oz of 24 Ladyfingers)
   - Cocoa powder for dusting the top
-notes: |
-  **Alcohol:** Tiramisu can be made with or without alcohol. This recipe calls for coffee flavored liqueur because I like that it enhances the coffee flavor, but other options are marsala wine or brandy.  
-  **Make Ahead Instructions:** Tiramisu is even better when made in advance, allowing the flavors to blend! It will keep in the refrigerator for 2 to 3 days.  
+notes: |-
+  **Alcohol:** Tiramisu can be made with or without alcohol. This recipe calls for coffee flavored liqueur because I like that it enhances the coffee flavor, but other options are marsala wine or brandy.
+  **Make Ahead Instructions:** Tiramisu is even better when made in advance, allowing the flavors to blend! It will keep in the refrigerator for 2 to 3 days.
   **Freezing Instructions:** Make completely, but don't dust with cocoa powder. Cover tightly with plastic wrap and then tinfoil and freeze for up to 3 months. Thaw in the refrigerator overnight and dust with cocoa powder a few hours before serving.
 tags:
   - Dessert
