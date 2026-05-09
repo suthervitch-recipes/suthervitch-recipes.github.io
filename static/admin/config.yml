@@ -41,10 +41,9 @@ collections:
         required: false
         hint: "Your private tips, variations, or comments about this dish"
 
-      # Tags moved to the end
+      # Tags moved to the end with a cleaner single-line UI
       - label: "Tags"
         name: "tags"
         widget: "list"
         required: false
-        summary: "{{fields.tag}}"
         field: { label: "Tag", name: "tag", widget: "string" }
