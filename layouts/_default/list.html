@@ -6,10 +6,26 @@
 </div>
 {{- end }}
 
+<!-- GLOBAL TAG LIST AT THE TOP -->
+{{- if  .Site.Taxonomies.tags }}
+<div class="global-tags" style="margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+  <h3 style="margin-top: 0; font-size: 1rem; text-transform: uppercase; opacity: 0.7;">Filter by Category</h3>
+  <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0 0 0; gap: 12px; flex-wrap: wrap;">
+    {{- range $name, $taxonomy := .Site.Taxonomies.tags }}
+    <li>
+      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}/" style="background: var(--tertiary); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: var(--primary); text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">
+        {{ $name | humanize }} <span style="opacity: 0.5; font-size: 0.7rem; margin-left: 4px;">({{ $taxonomy.Count }})</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}
+
 {{- $pages := .Paginator.Pages }}
 
 {{- range $pages }}
-<article class="post-entry" style="position: relative;">
+<article class="post-entry" style="position: relative; margin-bottom: 20px;">
   <header class="entry-header">
     <h2>{{ .Title }}</h2>
   </header>
@@ -18,7 +34,7 @@
     <p>{{ .Description | default .Summary }}</p>
   </div>
 
-  <!-- CLICKABLE TAGS SECTION -->
+  <!-- INDIVIDUAL POST TAGS -->
   {{- if .Params.tags }}
   <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap; position: relative; z-index: 10;">
     {{- range .Params.tags }}
@@ -35,7 +51,6 @@
     {{- partial "post_meta.html" . -}}
   </footer>
 
-  <!-- SAFER IMAGE LOGIC -->
   {{- if .Params.cover }}
     {{- if and .Params.cover.image (ne .Params.cover.image "") }}
       <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 8px;">
