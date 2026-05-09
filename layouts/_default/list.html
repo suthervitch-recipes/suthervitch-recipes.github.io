@@ -41,14 +41,14 @@
     <p>{{ .Description | default .Summary }}</p>
   </div>
 
-  <!-- FINAL TAG LOOP FIX -->
+  <!-- UPDATED TAG LOOP FOR OBJECT STYLE -->
   {{- if .Params.tags }}
   <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap; position: relative; z-index: 10;">
     {{- range .Params.tags }}
     <li>
-      <!-- Since tags are now a list of strings, '.' is the value itself -->
-      <a href="{{ "tags/" | absURL }}{{ . | urlize }}/" style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: inherit; text-decoration: none;">
-        #{{ . }}
+      <!-- Accessing the 'tag' field within the object -->
+      <a href="{{ "tags/" | absURL }}{{ .tag | urlize }}/" style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: inherit; text-decoration: none;">
+        #{{ .tag }}
       </a>
     </li>
     {{- end }}
