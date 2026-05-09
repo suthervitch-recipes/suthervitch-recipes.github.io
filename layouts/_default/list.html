@@ -24,8 +24,8 @@
   </footer>
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
-{{- range .Params.cover.image }}
-    <img src="{{ . | absURL }}">
+{{- if .Params.cover.image }}
+    <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}">
 {{- end }}
 {{- end }}
 
