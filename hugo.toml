@@ -2,9 +2,10 @@ baseURL = 'https://suthervitch-recipes.github.io/'
 locale = 'en-us'
 title = 'Our Family Recipes'
 theme = 'PaperMod'
+summaryLength = 0  # Move this HERE (outside of [params])
+
 [params]
     showFullContents = false
     description = true
     disableSpecial1stPost = true
     showDescription = true
-    summaryLength = 0
