@@ -29,11 +29,5 @@ collections:
       - label: "Tags"
         name: "tags"
         widget: "list"
-        # This makes the UI look like a list of removable pills
-        field: 
-          label: "Tag"
-          name: "tag"
-          widget: "select"
-          multiple: false 
-          create: true
-          options: ["Italian", "Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
+        # This gives you a clean text box for every tag
+        field: { label: "Tag", name: "tag", widget: "string" }
