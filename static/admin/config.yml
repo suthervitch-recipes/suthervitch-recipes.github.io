@@ -28,9 +28,7 @@ collections:
       - { label: "Instructions", name: "body", widget: "markdown" }
       - label: "Tags"
         name: "tags"
-        widget: "relation"
-        collection: "recipes" # This must match your collection name
-        search_fields: ["tags"]
-        display_fields: ["tags"]
-        value_field: "tags"
+        widget: "select"
         multiple: true
+        create: true # This allows you to add a NEW tag if it's not in the list
+        options: ["Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
