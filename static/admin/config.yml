@@ -2,8 +2,6 @@ backend:
   name: github
   repo: suthervitch-recipes/suthervitch-recipes.github.io
   branch: main
-  auth_type: pkce # <--- ADD THIS LINE
-  app_id: Ov23liMkbKwKHbWeIZUL # Paste your Client ID from GitHub here
 
 media_folder: "static/images" # Where photos will be saved
 public_folder: "/images"
