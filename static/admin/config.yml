@@ -26,8 +26,4 @@ collections:
           - { label: "Caption", name: "caption", widget: "string", required: false }
       - { label: "Ingredients", name: "ingredients", widget: "list", summary: "{{fields.item}}" }
       - { label: "Instructions", name: "body", widget: "markdown" }
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        # This gives you a clean text box for every tag
-        field: { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
