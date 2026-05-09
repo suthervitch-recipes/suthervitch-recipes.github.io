@@ -9,3 +9,7 @@ summaryLength = 0  # Move this HERE (outside of [params])
     description = true
     disableSpecial1stPost = true
     showDescription = true
+    
+[taxonomies]
+    tag = "tags"
+    category = "categories"
