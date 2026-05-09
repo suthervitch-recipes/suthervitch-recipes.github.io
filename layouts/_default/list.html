@@ -9,24 +9,36 @@
 {{- $pages := .Paginator.Pages }}
 
 {{- range $pages }}
-<article class="post-entry">
+<article class="post-entry" style="position: relative;">
   <header class="entry-header">
     <h2>{{ .Title }}</h2>
   </header>
   
-  <!-- This forces the description to show -->
   <div class="entry-content">
     <p>{{ .Description | default .Summary }}</p>
   </div>
+
+  <!-- TAGS SECTION -->
+  {{- if .Params.tags }}
+  <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap;">
+    {{- range .Params.tags }}
+    <li style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem;">
+      #{{ . }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
   
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
   </footer>
-  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+
+  {{- if (and (isset .Params.cover "image") (ne .Params.cover.image "")) }}
+    <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" style="max-width: 100%; height: auto; margin-top: 10px; border-radius: 8px;">
+  {{- end }}
+
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;"></a>
 </article>
-{{- if .Params.cover.image }}
-    <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}">
-{{- end }}
 {{- end }}
 
 {{- end }}{{/* end main */}}
