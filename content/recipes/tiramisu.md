@@ -1,12 +1,11 @@
 ---
-title: Tiramisu
-date: 2026-05-08T21:26:00
-description: Tasty Tiramisu
-cover: null
+title: Test
+date: 2026-05-08T21:01:00
+description: Test2
+cover:
+  image: "images/default-recipe.jpg"
 ingredients:
-  - Ladyfingers
-  - Cheese
-  - Cream
+  - Test2
 ---
 
-Mix it all
+Test3
