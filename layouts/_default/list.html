@@ -6,7 +6,7 @@
 </div>
 {{- end }}
 
-<!-- GLOBAL TAG LIST (As we set up before) -->
+<!-- GLOBAL TAG LIST -->
 {{- if .Site.Taxonomies.tags }}
 <div class="global-tags" style="margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px;">
   <h3 style="margin-top: 0; font-size: 1rem; text-transform: uppercase; opacity: 0.7;">Filter by Category</h3>
@@ -29,7 +29,7 @@
   <header class="entry-header">
     <h2>{{ .Title }}</h2>
     
-    <!-- NEW: RECIPE INFO BAR -->
+    <!-- RECIPE INFO BAR -->
     <div class="recipe-info" style="display: flex; gap: 15px; font-size: 0.85rem; opacity: 0.8; margin-top: 5px; color: var(--secondary);">
       {{- if .Params.portions }}<span>🍴 {{ .Params.portions }}</span>{{ end }}
       {{- if .Params.prepTime }}<span>⏱️ Prep: {{ .Params.prepTime }}</span>{{ end }}
@@ -41,12 +41,13 @@
     <p>{{ .Description | default .Summary }}</p>
   </div>
 
+  <!-- FIXED TAG LOOP -->
   {{- if .Params.tags }}
   <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap; position: relative; z-index: 10;">
     {{- range .Params.tags }}
     <li>
-      <a href="{{ "tags/" | absURL }}{{ (index . "tag") | urlize }}/" style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: inherit; text-decoration: none;">
-        #{{ index . "tag" }}
+      <a href="{{ "tags/" | absURL }}{{ .tag | urlize }}/" style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: inherit; text-decoration: none;">
+        #{{ .tag }}
       </a>
     </li>
     {{- end }}
@@ -57,7 +58,7 @@
     {{- partial "post_meta.html" . -}}
   </footer>
 
-  <!-- PERSONAL NOTES (Optional: If you want notes on the homepage) -->
+  <!-- PERSONAL NOTES -->
   {{- if .Params.notes }}
   <div class="personal-notes" style="background: rgba(255,255,0,0.05); padding: 10px; border-left: 3px solid #e6db74; margin: 10px 0; font-style: italic; font-size: 0.9rem;">
     <strong>Note:</strong> {{ .Params.notes | markdownify }}
