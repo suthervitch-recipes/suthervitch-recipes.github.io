@@ -41,9 +41,9 @@ collections:
         required: false
         hint: "Your private tips, variations, or comments about this dish"
 
-      # This provides a single text box for all tags
       - label: "Tags"
         name: "tags"
-        widget: "string"
+        widget: "list"
         required: false
-        hint: "Enter tags separated by commas (e.g. Italian, Pasta, Spicy)"
+        # This 'field' line without a 'name' makes it a simple list of strings
+        field: { label: "Tag", widget: "string" }
