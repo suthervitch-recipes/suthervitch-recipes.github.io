@@ -2,24 +2,22 @@ baseURL = 'https://suthervitch-recipes.github.io/'
 locale = 'en-us'
 title = 'Suthervitch Recipes'
 theme = 'PaperMod'
-summaryLength = 0  # Move this HERE (outside of [params])
+summaryLength = 0
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+    name = "Search"
+    url = "search/"
+    weight = 10
 
 [params]
     showFullContents = false
     description = true
     disableSpecial1stPost = true
     showDescription = true
-    
-[taxonomies]
-    tag = "tags"
-    category = "categories"
-
-# Add JSON to outputs so Hugo builds the search index
-[outputs]
-    home = ["HTML", "RSS", "JSON"]
-
-# Add Search to your navigation menu
-[[menu.main]]
-    name = "Search"
-    url = "search/"  # This trailing slash is important
-    weight = 10
