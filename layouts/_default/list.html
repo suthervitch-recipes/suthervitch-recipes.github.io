@@ -41,17 +41,12 @@
     <p>{{ .Description | default .Summary }}</p>
   </div>
 
-  <!-- HYBRID TAG LOOP (FIXES BUILD ERRORS) -->
+  <!-- TAGS FROM SINGLE STRING BOX -->
   {{- if .Params.tags }}
   <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0; gap: 10px; flex-wrap: wrap; position: relative; z-index: 10;">
-    {{- range .Params.tags }}
-      {{- $tagName := "" }}
-      {{- if reflect.IsMap . }}
-        {{- $tagName = .tag }}
-      {{- else }}
-        {{- $tagName = . }}
-      {{- end }}
-      
+    {{- /* We split the text by commas and clean up extra spaces */ -}}
+    {{- range (split .Params.tags ",") }}
+      {{- $tagName := trim . " " }}
       {{- if $tagName }}
       <li>
         <a href="{{ "tags/" | absURL }}{{ $tagName | urlize }}/" style="background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: inherit; text-decoration: none;">
