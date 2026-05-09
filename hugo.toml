@@ -7,3 +7,4 @@ theme = 'PaperMod'
     description = true
     disableSpecial1stPost = true
     showDescription = true
+    summaryLength = 0
