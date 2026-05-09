@@ -28,7 +28,12 @@ collections:
       - { label: "Instructions", name: "body", widget: "markdown" }
       - label: "Tags"
         name: "tags"
-        widget: "select"
-        multiple: true
-        create: true # This must be at the same indentation level as 'widget'
-        options: ["Italian", "Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
+        widget: "list"
+        # This makes the UI look like a list of removable pills
+        field: 
+          label: "Tag"
+          name: "tag"
+          widget: "select"
+          multiple: false 
+          create: true
+          options: ["Italian", "Dessert", "Dinner", "Breakfast", "Asian", "Pasta", "Quick"]
