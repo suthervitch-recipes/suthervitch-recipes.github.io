@@ -16,6 +16,12 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Short Description", name: "description", widget: "text" }
+      
+      # Recipe Metadata
+      - { label: "Portions", name: "portions", widget: "string", required: false, hint: "e.g., 4 people" }
+      - { label: "Prep Time", name: "prepTime", widget: "string", required: false, hint: "e.g., 15 mins" }
+      - { label: "Cook Time", name: "cookTime", widget: "string", required: false, hint: "e.g., 45 mins" }
+
       - label: "Featured Image"
         name: "cover"
         widget: "object"
@@ -24,10 +30,20 @@ collections:
           - { label: "Image", name: "image", widget: "image", required: false, default: "" }
           - { label: "Alt Text", name: "alt", widget: "string", required: false }
           - { label: "Caption", name: "caption", widget: "string", required: false }
+
       - { label: "Ingredients", name: "ingredients", widget: "list", summary: "{{fields.item}}" }
-      - { label: "Instructions", name: "body", widget: "markdown" }
+      
       - label: "Tags"
         name: "tags"
         widget: "list"
-        summary: "{{fields.tag}}" # This shows the tag name even when the row is closed
+        required: false
+        summary: "{{fields.tag}}"
         field: { label: "Tag", name: "tag", widget: "string" }
+
+      - { label: "Instructions", name: "body", widget: "markdown" }
+
+      - label: "Personal Notes"
+        name: "notes"
+        widget: "markdown"
+        required: false
+        hint: "Your private tips, variations, or comments about this dish"
