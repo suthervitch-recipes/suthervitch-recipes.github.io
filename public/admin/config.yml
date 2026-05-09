@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: suthervitch-recipes/suthervitch-recipes.github.io
+  branch: main
+
+media_folder: "static/images" # Where photos will be saved
+public_folder: "/images"
+
+collections:
+  - name: "recipes"
+    label: "Recipes"
+    folder: "content/recipes" # Where the markdown files go
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "cover", widget: "image", required: false }
+      - { label: "Ingredients", name: "ingredients", widget: "list", summary: "{{fields.item}}" }
+      - { label: "Instructions", name: "body", widget: "markdown" }
