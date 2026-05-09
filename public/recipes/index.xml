@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Our Family Recipes</title>
+    <title>Family Recipes on Our Family Recipes</title>
     <link>http://localhost:1313/recipes/</link>
-    <description>Recent content on Our Family Recipes</description>
+    <description>Recent content in Family Recipes on Our Family Recipes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 08 May 2026 21:33:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Title-Mike</title>
+      <link>http://localhost:1313/recipes/title-mike/</link>
+      <pubDate>Fri, 08 May 2026 21:33:00 +0000</pubDate>
+      <guid>http://localhost:1313/recipes/title-mike/</guid>
+      <description>Description-Mike</description>
+    </item>
+    <item>
+      <title>test-Mike</title>
+      <link>http://localhost:1313/recipes/test-mike/</link>
+      <pubDate>Fri, 08 May 2026 21:31:00 +0000</pubDate>
+      <guid>http://localhost:1313/recipes/test-mike/</guid>
+      <description>test-Mike</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/recipes/test/</link>
+      <pubDate>Fri, 08 May 2026 21:01:00 +0000</pubDate>
+      <guid>http://localhost:1313/recipes/test/</guid>
+      <description>Test2</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/recipes/tiramisu/</link>
+      <pubDate>Fri, 08 May 2026 21:01:00 +0000</pubDate>
+      <guid>http://localhost:1313/recipes/tiramisu/</guid>
+      <description>Test2</description>
+    </item>
+    <item>
+      <title>Sam&#39;s Cookies</title>
+      <link>http://localhost:1313/recipes/sam-s-cookies/</link>
+      <pubDate>Fri, 08 May 2026 20:56:00 +0000</pubDate>
+      <guid>http://localhost:1313/recipes/sam-s-cookies/</guid>
+      <description>Sam&amp;#39;s Cookies</description>
+    </item>
   </channel>
 </rss>
