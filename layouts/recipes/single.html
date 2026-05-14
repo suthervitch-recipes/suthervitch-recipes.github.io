@@ -5,22 +5,34 @@
     <h1 class="post-title">{{ .Title }}</h1>
     
     <!-- RECIPE INFO BAR -->
-    <div class="recipe-info" style="display: flex; gap: 20px; font-size: 1rem; opacity: 0.9; margin: 15px 0; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--secondary);">
+    <div class="recipe-info" style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem; opacity: 0.9; margin: 15px 0; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--secondary);">
       {{- if .Params.portions }}<span>🍴 **Portions:** {{ .Params.portions }}</span>{{ end }}
       {{- if .Params.prepTime }}<span>⏱️ **Prep:** {{ .Params.prepTime }}</span>{{ end }}
       {{- if .Params.cookTime }}<span>🔥 **Cook:** {{ .Params.cookTime }}</span>{{ end }}
+      
+      <!-- NEW STARS DISPLAY -->
+      {{- if .Params.stars }}
+      <span style="color: #ffd700; font-weight: bold;">⭐ {{ .Params.stars }} Stars</span>
+      {{- end }}
     </div>
+
+    <!-- OPTIONAL DESCRIPTION -->
+    {{- if .Params.description }}
+    <div class="post-description" style="margin-bottom: 25px; font-style: italic; opacity: 0.8; font-size: 1.1rem; line-height: 1.6;">
+      {{ .Params.description }}
+    </div>
+    {{- end }}
   </header>
 
   <!-- INGREDIENTS SECTION -->
   {{- if .Params.ingredients }}
-  <div class="recipe-ingredients" style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px; margin-bottom: 30px;">
+  <div class="recipe-ingredients" style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.05);">
     <h3 style="margin-top: 0;">🛒 Ingredients</h3>
     <ul style="list-style-type: none; padding-left: 0;">
       {{- range .Params.ingredients }}
       <li style="margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.05);">
         <label style="display: flex; align-items: center; cursor: pointer;">
-          <input type="checkbox" style="margin-right: 12px;"> {{ . }}
+          <input type="checkbox" style="margin-right: 12px; width: 18px; height: 18px; accent-color: #ffd700;"> {{ . }}
         </label>
       </li>
       {{- end }}
@@ -44,11 +56,15 @@
   </div>
   {{- end }}
 
-  <footer class="post-footer">
+  <footer class="post-footer" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
     {{- if .Params.tags }}
-    <ul class="post-tags">
+    <ul class="post-tags" style="display: flex; list-style: none; padding: 0; gap: 10px; flex-wrap: wrap;">
       {{- range .Params.tags }}
-      <li><a href="{{ "tags/" | absURL }}{{ . | urlize }}/">#{{ . }}</a></li>
+      <li>
+        <a href="{{ "tags/" | absURL }}{{ . | urlize }}/" style="background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; text-decoration: none; color: inherit;">
+          #{{ . }}
+        </a>
+      </li>
       {{- end }}
     </ul>
     {{- end }}
