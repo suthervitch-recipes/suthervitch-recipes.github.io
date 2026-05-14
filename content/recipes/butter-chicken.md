@@ -2,6 +2,7 @@
 title: Butter Chicken
 date: ''
 description: ''
+stars: '5'
 portions: ''
 prepTime: ''
 cookTime: ''
