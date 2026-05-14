@@ -2,6 +2,7 @@
 title: Maple/Soy/AppleCider Chicken Breast
 date: ''
 description: ''
+stars: '4'
 portions: ''
 prepTime: ''
 cookTime: ''
