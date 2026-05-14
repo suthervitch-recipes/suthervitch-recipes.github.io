@@ -19,6 +19,7 @@ ingredients:
 notes: 'Link: [https://cooking.nytimes.com/recipes/1022024-crispy-gnocchi-with-burst-tomatoes-and-mozzarella](https://cooking.nytimes.com/recipes/1022024-crispy-gnocchi-with-burst-tomatoes-and-mozzarella)'
 tags:
   - Italian
+  - Vegetarian
 ---
 
 Step 1
