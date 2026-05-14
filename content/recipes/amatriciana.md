@@ -2,6 +2,7 @@
 title: Amatriciana
 date: ''
 description: ''
+stars: '5'
 portions: 4 servings
 prepTime: 30 mins
 cookTime: 20-30 mins
