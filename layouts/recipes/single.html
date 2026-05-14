@@ -5,14 +5,16 @@
     <h1 class="post-title">{{ .Title }}</h1>
     
     <!-- RECIPE INFO BAR -->
-    <div class="recipe-info" style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem; opacity: 0.9; margin: 15px 0; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--secondary);">
+    <div class="recipe-info" style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 1rem; opacity: 0.9; margin: 15px 0; padding: 10px 0; border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--secondary); align-items: center;">
       {{- if .Params.portions }}<span>🍴 **Portions:** {{ .Params.portions }}</span>{{ end }}
       {{- if .Params.prepTime }}<span>⏱️ **Prep:** {{ .Params.prepTime }}</span>{{ end }}
       {{- if .Params.cookTime }}<span>🔥 **Cook:** {{ .Params.cookTime }}</span>{{ end }}
       
-      <!-- NEW STARS DISPLAY -->
+      <!-- REPEATING STARS DISPLAY -->
       {{- if .Params.stars }}
-      <span style="color: #ffd700; font-weight: bold;">⭐ {{ .Params.stars }} Stars</span>
+      <span style="letter-spacing: 2px;">
+        {{ range (seq (int .Params.stars)) }}⭐{{ end }}
+      </span>
       {{- end }}
     </div>
 
