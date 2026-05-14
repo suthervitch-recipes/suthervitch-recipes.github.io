@@ -14,13 +14,13 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      # Make Date optional
-      - { label: "Publish Date", name: "date", widget: "datetime", required: false }
       
-      # Make Description optional
+      # Optional metadata
+      - { label: "Publish Date", name: "date", widget: "datetime", required: false }
       - { label: "Description", name: "description", widget: "text", required: false }
       
-      # Recipe Metadata
+      # Recipe Stats & Rating
+      - { label: "Rating (Stars)", name: "stars", widget: "select", options: ["1", "2", "3", "4", "5"], required: false }
       - { label: "Portions", name: "portions", widget: "string", required: false, hint: "e.g., 4 people" }
       - { label: "Prep Time", name: "prepTime", widget: "string", required: false, hint: "e.g., 15 mins" }
       - { label: "Cook Time", name: "cookTime", widget: "string", required: false, hint: "e.g., 45 mins" }
@@ -48,5 +48,5 @@ collections:
         name: "tags"
         widget: "list"
         required: false
-        # This 'field' line without a 'name' makes it a simple list of strings
+        # Clean UI: One text line per tag, no nested boxes
         field: { label: "Tag", widget: "string" }
