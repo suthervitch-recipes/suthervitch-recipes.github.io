@@ -8,13 +8,30 @@
 
 <!-- GLOBAL TAG LIST -->
 {{- if .Site.Taxonomies.tags }}
-<div class="global-tags" style="margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+<div class="global-tags" style="margin-bottom: 20px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px;">
   <h3 style="margin-top: 0; font-size: 1rem; text-transform: uppercase; opacity: 0.7;">Filter by Category</h3>
   <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0 0 0; gap: 12px; flex-wrap: wrap;">
     {{- range $name, $taxonomy := .Site.Taxonomies.tags }}
     <li>
       <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}/" style="background: var(--tertiary); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: var(--primary); text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">
         {{ $name | humanize }} <span style="opacity: 0.5; font-size: 0.7rem; margin-left: 4px;">({{ $taxonomy.Count }})</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}
+
+<!-- GLOBAL RATING LIST -->
+{{- if .Site.Taxonomies.stars }}
+<div class="global-stars" style="margin-bottom: 30px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+  <h3 style="margin-top: 0; font-size: 1rem; text-transform: uppercase; opacity: 0.7;">Filter by Rating</h3>
+  <ul style="display: flex; list-style: none; padding: 0; margin: 10px 0 0 0; gap: 12px; flex-wrap: wrap;">
+    {{- range $name, $taxonomy := .Site.Taxonomies.stars }}
+    <li>
+      <a href="{{ "/stars/" | relLangURL }}{{ $name | urlize }}/" style="background: rgba(255, 215, 0, 0.1); padding: 5px 12px; border-radius: 20px; font-size: 0.9rem; color: #ffd700; text-decoration: none; border: 1px solid rgba(255, 215, 0, 0.3);">
+        {{ range (seq (int $name)) }}⭐{{ end }}
+        <span style="opacity: 0.6; font-size: 0.7rem; margin-left: 4px; color: var(--primary);">({{ $taxonomy.Count }})</span>
       </a>
     </li>
     {{- end }}
@@ -30,10 +47,17 @@
     <h2>{{ .Title }}</h2>
     
     <!-- RECIPE INFO BAR -->
-    <div class="recipe-info" style="display: flex; gap: 15px; font-size: 0.85rem; opacity: 0.8; margin-top: 5px; color: var(--secondary);">
+    <div class="recipe-info" style="display: flex; gap: 15px; font-size: 0.85rem; opacity: 0.8; margin-top: 5px; color: var(--secondary); align-items: center;">
       {{- if .Params.portions }}<span>🍴 {{ .Params.portions }}</span>{{ end }}
-      {{- if .Params.prepTime }}<span>⏱️ Prep: {{ .Params.prepTime }}</span>{{ end }}
-      {{- if .Params.cookTime }}<span>🔥 Cook: {{ .Params.cookTime }}</span>{{ end }}
+      {{- if .Params.prepTime }}<span>⏱️ {{ .Params.prepTime }}</span>{{ end }}
+      {{- if .Params.cookTime }}<span>🔥 {{ .Params.cookTime }}</span>{{ end }}
+      
+      <!-- REPEATING STARS ON CARD -->
+      {{- if .Params.stars }}
+      <span style="letter-spacing: 1px; margin-left: 5px;">
+        {{ range (seq (int .Params.stars)) }}⭐{{ end }}
+      </span>
+      {{- end }}
     </div>
   </header>
   
@@ -57,8 +81,6 @@
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
   </footer>
-
-  <!-- PERSONAL NOTES REMOVED FROM HERE -->
 
   {{- if .Params.cover }}
     {{- if and .Params.cover.image (ne .Params.cover.image "") }}
