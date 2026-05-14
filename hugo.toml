@@ -7,6 +7,8 @@ summaryLength = 0
 [taxonomies]
     tag = "tags"
     category = "categories"
+    # REGISTERING STARS AS A TAXONOMY
+    star = "stars"
 
 [outputs]
     home = ["HTML", "RSS", "JSON"]
@@ -25,4 +27,5 @@ summaryLength = 0
     [params.searchConfig]
         from_frontmatter = true
         include_content = true
-        fields = ["title", "content", "tags", "description", "categories"]
+        # ADDED 'STARS' TO SEARCH FIELDS
+        fields = ["title", "content", "tags", "description", "categories", "stars"]
