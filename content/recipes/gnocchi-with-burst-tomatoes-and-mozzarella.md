@@ -2,6 +2,7 @@
 title: Gnocchi With Burst Tomatoes and Mozzarella
 date: ''
 description: ''
+stars: '5'
 portions: '4'
 prepTime: ''
 cookTime: ''
