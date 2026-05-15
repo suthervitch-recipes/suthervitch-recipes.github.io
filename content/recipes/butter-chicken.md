@@ -47,6 +47,7 @@ notes: |-
   Need to find a better method for blending then straining then reblending with more water. Stand blender is apparently the way
 tags:
   - Indian
+  - Dinner
 ---
 
 Marinate the chicken with  ginger paste, garlic paste, red chili powder, and salt and keep it aside for 15 to 20 minutes
