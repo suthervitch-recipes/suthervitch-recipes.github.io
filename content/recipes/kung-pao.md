@@ -2,8 +2,8 @@
 title: Kung Pao
 date: ''
 description: ''
-stars: ''
-portions: ''
+stars: '5'
+portions: '2'
 prepTime: ''
 cookTime: ''
 cover: null
