@@ -27,6 +27,7 @@ notes: |-
   Make sure to get a good sear on chicken
 tags:
   - Chicken
+  - Dinner
 ---
 
 salt and pepper chicken breasts
