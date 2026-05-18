@@ -47,6 +47,7 @@ notes: |-
 tags:
   - Chinese
   - Dinner
+  - Mike
 ---
 
 Deboned, deskinned chicken thigh, 300g. This’ll be tenderized and cut into \~1/2 inch cubes. You could also use chicken breast, but in my tests they came out a bit dryer and were a bit more of a pain to work with.
