@@ -22,6 +22,7 @@ notes: |-
 tags:
   - Dessert
   - Italian
+  - Sam
 ---
 
 1. Add whipping cream to a mixing bowl and beat on medium speed with electric mixers (or use a stand mixer). Slowly add sugar and vanilla and continue to beat until stiff peaks. Add mascarpone cheese and fold in until combined. Set aside.
