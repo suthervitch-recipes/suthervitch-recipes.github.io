@@ -1,6 +1,7 @@
 ---
 title: The Best Chili Recipe
-description: 'A complex, hearty beef chili made with dried chilies and rich umami flavor builders.'
+date: ''
+description: A complex, hearty beef chili made with dried chilies and rich umami flavor builders.
 portions: 6 servings
 prepTime: 30 mins
 cookTime: 2 hrs
@@ -23,10 +24,11 @@ ingredients:
   - Salt and pepper to taste
 notes: |-
   From https://www.seriouseats.com/the-best-chili-recipe
-  
+
   Using a blend of toasted dried chilies instead of generic chili powder creates a much deeper, more complex flavor profile. The soy sauce and fish sauce act as umami boosters.
 tags:
   - Dinner
+  - Mike
 ---
 
 1 Toast the dried chilies in a dry skillet over medium-high heat until fragrant, about 2 minutes. Transfer to a blender.
