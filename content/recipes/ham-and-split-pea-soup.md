@@ -1,6 +1,7 @@
 ---
 title: Ham and Split Pea Soup
-description: 'A comforting, savory soup that is perfect for using up leftover ham or a ham bone.'
+date: ''
+description: A comforting, savory soup that is perfect for using up leftover ham or a ham bone.
 portions: 8 servings
 prepTime: 15 mins
 cookTime: 1 hr 30 mins
@@ -19,10 +20,11 @@ ingredients:
   - Salt and pepper, to taste
 notes: |-
   From https://www.allrecipes.com/recipe/219170/ham-and-split-pea-soup-recipe-a-great-soup/
-  
+
   Make sure to rinse and sort the split peas to remove any small stones. The peas need about 90 minutes to fully break apart. If the soup is too thick, add extra chicken broth towards the end of cooking.
 tags:
   - Dinner
+  - Mike
 ---
 
 1 In a large stockpot or dutch oven, melt the butter over medium heat.
