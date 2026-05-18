@@ -46,6 +46,7 @@ notes: |-
   Better than bouillon just under 3 tsp
 tags:
   - Dinner
+  - Mike
 ---
 
 Combine first 7 ingredients in a small bowl. Set aside.
