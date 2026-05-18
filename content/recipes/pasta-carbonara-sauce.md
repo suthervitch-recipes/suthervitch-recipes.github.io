@@ -1,6 +1,7 @@
 ---
 title: Pasta Carbonara Sauce
-description: 'A traditional Roman pasta dish utilizing guanciale, eggs, and Pecorino Romano.'
+date: ''
+description: A traditional Roman pasta dish utilizing guanciale, eggs, and Pecorino Romano.
 portions: 4 servings
 prepTime: 10 mins
 cookTime: 15 mins
@@ -15,12 +16,13 @@ ingredients:
   - Freshly ground black pepper
 notes: |-
   From https://www.seriouseats.com/pasta-carbonara-sauce-recipe
-  
+
   Do not use cream. The creamy texture comes from emulsifying the rendered pork fat, pasta water, and the egg/cheese mixture. Allow your eggs to come to room temperature before mixing.
 tags:
   - Italian
   - Pasta
   - Dinner
+  - Mike
 ---
 
 1 Bring a large pot of salted water to a boil.
