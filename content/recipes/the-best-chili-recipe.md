@@ -1,6 +1,6 @@
 ---
 title: The Best Chili Recipe
-date: ''
+date: 2026-05-18T17:11:00
 description: A complex, hearty beef chili made with dried chilies and rich umami flavor builders.
 portions: 6 servings
 prepTime: 30 mins
