@@ -1,8 +1,10 @@
 ---
 title: Sauced Chimichurri Sauce
-description: 'A bright, herbaceous Argentine condiment essential for grilled meats.'
+date: ''
+description: A bright, herbaceous Argentine condiment essential for grilled meats.
 portions: 1 cup
 prepTime: 10 mins
+cookTime: ''
 cover: null
 ingredients:
   - 1 cup tightly packed fresh parsley leaves, finely chopped
@@ -14,10 +16,11 @@ ingredients:
   - Kosher salt and freshly ground black pepper
 notes: |-
   From https://www.seriouseats.com/sauced-chimichurri-sauce-recipe
-  
+
   Hand-chopping the herbs is highly recommended over using a food processor to prevent the sauce from turning into a muddy paste. Let it sit for at least 30 minutes before serving to let the flavors meld.
 tags:
   - Vegetarian
+  - Mike
 ---
 
 1 In a medium bowl, combine the finely chopped parsley, oregano, and minced garlic.
