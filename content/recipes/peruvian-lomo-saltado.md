@@ -1,7 +1,10 @@
 ---
 title: Peruvian Lomo Saltado
+date: ''
 description: ''
 portions: 4 servings
+prepTime: ''
+cookTime: ''
 cover: null
 ingredients:
   - 2 tablespoons vegetable oil, divided
@@ -19,9 +22,14 @@ ingredients:
   - White rice, cooked, for serving (optional)
 notes: |-
   From https://tasty.co/recipe/peruvian-lomo-saltado
+
+  - Omit the vinegar for a milder flavor or swap it for zesty lemon juice 🍋
+  - Dial back the aji amarillo if you're not a fan of spicy, or go bold and keep it for depth 🌶️
+  - Mix up the protein! Chicken, pork, or lamb can be tasty alternatives to steak 🍗🐖🐑
+  - Make your fries from scratch for that crispy goodness, or keep it easy with store-bought 🍟
+  - Amp up the flavor with sazon, honey, extra garlic, or cumin for a flavor explosion! 🌟
 tags:
   - Dinner
-  - Chinese
 ---
 
 1 Heat 1 tablespoon of the vegetable oil in a large pan or wok over high heat.
