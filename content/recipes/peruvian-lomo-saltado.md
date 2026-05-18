@@ -30,6 +30,7 @@ notes: |-
   - Amp up the flavor with sazon, honey, extra garlic, or cumin for a flavor explosion! 🌟
 tags:
   - Dinner
+  - Mike
 ---
 
 1 Heat 1 tablespoon of the vegetable oil in a large pan or wok over high heat.
