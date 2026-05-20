@@ -1,6 +1,7 @@
 ---
 title: Chicken Chorizo Paella
-description: 'A robust Spanish rice dish loaded with seared chicken thighs, smoky chorizo, and saffron.'
+date: ''
+description: A robust Spanish rice dish loaded with seared chicken thighs, smoky chorizo, and saffron.
 portions: 6 servings
 prepTime: 20 mins
 cookTime: 40 mins
@@ -22,8 +23,19 @@ ingredients:
   - Fresh parsley and lemon wedges, for garnish
 notes: |-
   From https://cookingformysoul.com/chicken-chorizo-paella/
-  
+
   Do not stir the rice once you add the broth. Letting it cook undisturbed allows the crispy bottom crust, known as the socarrat, to form.
+
+  **Reviews:**
+  Good, take off the chorizo wrapping you fuck
+
+  Good, used 12oz portuguese chorizo.
+
+  Seared thighs then let them sit and cut them up.  Seared cut up sausage.  Then did veggies.  Added garlic after onions & pepper.  Rinsed rice.  Rice started to stick and burn.  Was a bit wet and dense still.
+
+  Made this for Dylan. Good but too much liquid. Used Carolino Rice and tried not to mix rice but still a bit starchy
+
+  May 19 2026 - Used Costco chorizo, I liked it but a touch spicy. Used Bomba rice, no rinse beforehand, worked great.
 tags:
   - Chicken
   - Dinner
