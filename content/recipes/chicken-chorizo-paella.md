@@ -2,6 +2,7 @@
 title: Chicken Chorizo Paella
 date: ''
 description: A robust Spanish rice dish loaded with seared chicken thighs, smoky chorizo, and saffron.
+stars: '5'
 portions: 6 servings
 prepTime: 20 mins
 cookTime: 40 mins
