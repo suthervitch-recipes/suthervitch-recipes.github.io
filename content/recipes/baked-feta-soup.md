@@ -1,7 +1,7 @@
 ---
 title: Baked Feta Soup
 date: ''
-description: 'Simple to make, baked feta soup is full of rich flavors. A fun variation on the famous TikTok baked feta pasta the whole family will love!'
+description: Simple to make, baked feta soup is full of rich flavors. A fun variation on the famous TikTok baked feta pasta the whole family will love!
 portions: 6 servings
 prepTime: 10 mins
 cookTime: 50 mins
@@ -20,7 +20,6 @@ ingredients:
   - 4 garlic cloves, minced
   - 1/4 cup fresh basil, chopped, plus more for garnish
   - 3/4 cup orzo pasta (or other short pasta)
-
 notes: |-
   From: https://feelgoodfoodie.net/recipe/baked-feta-soup/
 
@@ -37,10 +36,10 @@ notes: |-
   - For leftovers, cook the orzo separately and add it to bowls when serving.
   - Goat cheese can substitute for feta.
   - Other small pasta shapes (ditalini, shells, etc.) work well.
-
 tags:
   - Vegetarian
   - Dinner
+  - Mike
 ---
 
 1 Preheat oven to 400°F.
