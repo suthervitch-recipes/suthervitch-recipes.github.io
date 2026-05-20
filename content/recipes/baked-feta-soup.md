@@ -2,6 +2,7 @@
 title: Baked Feta Soup
 date: ''
 description: Simple to make, baked feta soup is full of rich flavors. A fun variation on the famous TikTok baked feta pasta the whole family will love!
+stars: '5'
 portions: 6 servings
 prepTime: 10 mins
 cookTime: 50 mins
