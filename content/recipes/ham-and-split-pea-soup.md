@@ -2,6 +2,7 @@
 title: Ham and Split Pea Soup
 date: ''
 description: A comforting, savory soup that is perfect for using up leftover ham or a ham bone.
+stars: '3'
 portions: 8 servings
 prepTime: 15 mins
 cookTime: 1 hr 30 mins
