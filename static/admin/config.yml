@@ -15,8 +15,16 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       
-      # Optional metadata
-      - { label: "Publish Date", name: "date", widget: "datetime", required: false }
+      # Fixed metadata with strict Hugo formatting
+      - { 
+          label: "Publish Date", 
+          name: "date", 
+          widget: "datetime", 
+          required: false,
+          format: "YYYY-MM-DDTHH:mm:ssZZ",
+          date_format: "YYYY-MM-DD",
+          time_format: "HH:mm:ss"
+        }
       - { label: "Description", name: "description", widget: "text", required: false }
       
       # Recipe Stats & Rating
