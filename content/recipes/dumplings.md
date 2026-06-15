@@ -1,6 +1,6 @@
 ---
 title: Dumplings
-date: 2026-06-14T20:36
+date: 2026-06-14T20:36:00
 description: ''
 stars: '5'
 portions: Maybe 15
