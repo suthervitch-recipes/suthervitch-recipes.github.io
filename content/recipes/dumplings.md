@@ -1,6 +1,6 @@
 ---
 title: Dumplings
-date: 2026-06-14T20:36:00
+date: 2026-06-14T20:36
 description: ''
 stars: '5'
 portions: Maybe 15
@@ -29,6 +29,7 @@ ingredients:
 notes: ''
 tags:
   - Dinner
+  - Mike
 ---
 
 Mix soup ingredients in hot water and let cool in glass container.
