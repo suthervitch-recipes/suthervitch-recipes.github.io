@@ -1,6 +1,6 @@
 ---
 title: Short Rib
-date: 2026-06-14T20:50
+date: 2026-06-14T20:42:00
 description: ''
 stars: '4'
 portions: 4-5
