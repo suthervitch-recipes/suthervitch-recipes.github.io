@@ -15,15 +15,13 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       
-      # Fixed metadata with strict Hugo formatting
+      # Bulletproof string-casted ISO date generation
       - { 
           label: "Publish Date", 
           name: "date", 
           widget: "datetime", 
           required: false,
-          format: "YYYY-MM-DDTHH:mm:ssZZ",
-          date_format: "YYYY-MM-DD",
-          time_format: "HH:mm:ss"
+          value_format: "YYYY-MM-DDTHH:mm:ssZ"
         }
       - { label: "Description", name: "description", widget: "text", required: false }
       
