@@ -1,6 +1,6 @@
 ---
 title: Indian Rice
-date: 2026-06-14T20:56
+date: 2026-06-14T20:55:00
 description: ''
 stars: '4'
 portions: ''
