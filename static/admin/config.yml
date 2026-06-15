@@ -15,14 +15,9 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       
-      # Bulletproof string-casted ISO date generation
-      - { 
-          label: "Publish Date", 
-          name: "date", 
-          widget: "datetime", 
-          required: false,
-          value_format: "YYYY-MM-DDTHH:mm:ssZ"
-        }
+      # Simplified Date-Only generation to bypass browser time-picker issues
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false }
+      
       - { label: "Description", name: "description", widget: "text", required: false }
       
       # Recipe Stats & Rating
