@@ -32,7 +32,7 @@ tags:
   - Mike
 ---
 
-Mix soup ingredients in hot water and let cool in glass container.
+Mix soup ingredients in hot water and let cool in glass container in fridge. (If you use a plastic container you'll mess it up with the cutting step later). Should become jello.
 
 After cooled, cut into small cubes with a knife
 
