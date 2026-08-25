@@ -1,5 +1,5 @@
 ---
-title: Stuffed Shells
+title: Stuffed Pasta Shells with Ricotta/Spinach/Prosciutto
 date: 2026-08-24
 description: ''
 stars: '5'
