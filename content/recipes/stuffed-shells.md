@@ -1,5 +1,5 @@
 ---
-title: Stuffed Shells
+title: Stuffed Pepper Shells
 date: ''
 description: ''
 stars: '3'
