@@ -17,7 +17,7 @@ ingredients:
   - 1 cup diced tomatoes
   - 1 teaspoon smoked paprika
   - 1/2 teaspoon saffron threads, dissolved in 2 tablespoons warm water
-  - 2 cups Spanish Bomba rice (or Arborio)
+  - 2 cups Spanish Bomba rice (or Arborio) (I used Arborio first time and it was gummy. Also, don't rinse the rice -M.Y)
   - 4 cups chicken broth, hot
   - 1/2 cup frozen peas
   - Salt and black pepper, to taste
@@ -37,6 +37,9 @@ notes: |-
   Made this for Dylan. Good but too much liquid. Used Carolino Rice and tried not to mix rice but still a bit starchy
 
   May 19 2026 - Used Costco chorizo, I liked it but a touch spicy. Used Bomba rice, no rinse beforehand, worked great.
+
+
+  Sept 3 2026 - At cottage. Narrow pot worked fine. Used 6oz farmboy chorizo and worked fine but spicy. Sear chicken, remove. Then sear chorizo, remove. Then do onions and pepper. Add back in chicken and chorizo when adding the chicken stock. Used 4tsp of better than bouillon. Don't wash rice.
 tags:
   - Chicken
   - Dinner
