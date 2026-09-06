@@ -20,7 +20,7 @@ ingredients:
   - 2 cups Spanish Bomba rice (or Arborio) (I used Arborio first time and it was gummy. Also, don't rinse the rice -M.Y)
   - 4 cups chicken broth, hot
   - 1/2 cup frozen peas
-  - Salt and black pepper, to taste
+  - Salt and black pepper, to taste (I'd guess I add ~1/2tsp to 1tsp of salt beyond the salted meat -M.Y)
   - Fresh parsley and lemon wedges, for garnish
 notes: |-
   From https://cookingformysoul.com/chicken-chorizo-paella/
@@ -38,7 +38,6 @@ notes: |-
 
   May 19 2026 - Used Costco chorizo, I liked it but a touch spicy. Used Bomba rice, no rinse beforehand, worked great.
 
-
   Sept 3 2026 - At cottage. Narrow pot worked fine. Used 6oz farmboy chorizo and worked fine but spicy. Sear chicken, remove. Then sear chorizo, remove. Then do onions and pepper. Add back in chicken and chorizo when adding the chicken stock. Used 4tsp of better than bouillon. Don't wash rice.
 tags:
   - Chicken
@@ -49,8 +48,10 @@ tags:
 1 Heat the olive oil in a large paella pan or wide, shallow skillet over medium-high heat.
 
 2 Season the chicken pieces with salt and pepper. Add them to the pan and sear until browned on all sides. Push the chicken to the edges of the pan.
+(I take the chicken out of the pan and put it aside -M.Y)
 
 3 Add the sliced chorizo to the center and cook for 2-3 minutes until the oils begin to release.
+(I take the chorizo out of the pan and put it aside with the chicken -M.Y)
 
 4 Add the diced onion and red bell pepper, cooking until softened, about 5 minutes. Stir in the minced garlic and cook for 1 minute more.
 
@@ -59,6 +60,8 @@ tags:
 6 Pour in the rice, stirring for 1-2 minutes to coat the grains in the oil and flavors.
 
 7 Pour in the hot chicken broth and the dissolved saffron water. Season with salt. Give everything one final gentle stir to distribute the ingredients evenly.
+
+(Add back in the chorizo and chicken -M.Y)
 
 8 Bring to a boil, then immediately reduce the heat to medium-low. Simmer uncovered and undisturbed for 15-20 minutes, or until the liquid is mostly absorbed and the rice is tender.
 
