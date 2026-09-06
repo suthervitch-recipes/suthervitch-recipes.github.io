@@ -42,37 +42,41 @@
   </div>
   {{- end }}
 
-  <!-- INSTRUCTIONS (THE CONTENT) -->
-  <div class="instructions-content">
-  {{ .Content }}
-</div>
-
-<style>
-  .instructions-content p {
-    margin-bottom: 1em !important;
-  }
-  .instructions-content p:last-child {
-    margin-bottom: 0 !important;
-  }
-</style>
+  <!-- INSTRUCTIONS SECTION -->
+  {{- if .Content }}
+  <div class="recipe-instructions" style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px solid rgba(255,255,255,0.05);">
+    <h3 style="margin-top: 0;">🧑‍🍳 Instructions</h3>
+    <div class="instructions-content">
+      {{ .Content }}
+    </div>
+  </div>
+  <style>
+    .instructions-content p {
+      margin-bottom: 1em !important;
+    }
+    .instructions-content p:last-child {
+      margin-bottom: 0 !important;
+    }
+  </style>
+  {{- end }}
 
   <!-- PERSONAL NOTES -->
-{{- if .Params.notes }}
-<div class="personal-notes" style="background: rgba(255,255,0,0.05); padding: 20px; border-left: 4px solid #e6db74; margin-top: 40px; border-radius: 4px;">
-  <h3 style="margin-top: 0; font-size: 1.2rem;">💡 Personal Notes & Tips</h3>
-  <div class="notes-content" style="font-style: italic; opacity: 0.9;">
-    {{ .Params.notes | markdownify }}
+  {{- if .Params.notes }}
+  <div class="personal-notes" style="background: rgba(255,255,0,0.05); padding: 20px; border-left: 4px solid #e6db74; margin-top: 40px; border-radius: 4px;">
+    <h3 style="margin-top: 0; font-size: 1.2rem;">💡 Personal Notes & Tips</h3>
+    <div class="notes-content" style="font-style: italic; opacity: 0.9;">
+      {{ .Params.notes | markdownify }}
+    </div>
   </div>
-</div>
-<style>
-  .notes-content p {
-    margin-bottom: 1em !important;
-  }
-  .notes-content p:last-child {
-    margin-bottom: 0 !important;
-  }
-</style>
-{{- end }}
+  <style>
+    .notes-content p {
+      margin-bottom: 1em !important;
+    }
+    .notes-content p:last-child {
+      margin-bottom: 0 !important;
+    }
+  </style>
+  {{- end }}
 
   <footer class="post-footer" style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
     {{- if .Params.tags }}
