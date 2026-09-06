@@ -49,5 +49,5 @@ collections:
         name: "tags"
         widget: "list"
         required: false
-        # Clean UI: One text line per tag, no nested boxes
-        field: { label: "Tag", widget: "string" }
+        # Sveltia-compliant tag list configuration
+        field: { label: "Tag", name: "tag", widget: "string" }
