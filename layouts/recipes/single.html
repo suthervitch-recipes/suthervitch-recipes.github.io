@@ -52,7 +52,7 @@
   {{- if .Params.notes }}
   <div class="personal-notes" style="background: rgba(255,255,0,0.05); padding: 20px; border-left: 4px solid #e6db74; margin-top: 40px; border-radius: 4px;">
     <h3 style="margin-top: 0; font-size: 1.2rem;">💡 Personal Notes & Tips</h3>
-    <div style="font-style: italic; opacity: 0.9;">
+    <div style="font-style: italic; opacity: 0.9; white-space: pre-line;">
       {{ .Params.notes | markdownify }}
     </div>
   </div>
