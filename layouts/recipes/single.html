@@ -43,10 +43,18 @@
   {{- end }}
 
   <!-- INSTRUCTIONS (THE CONTENT) -->
-  <div class="post-content">
-    <h3 style="margin-bottom: 15px;">👩‍🍳 Instructions</h3>
-    {{- .Content -}}
-  </div>
+  <div class="instructions-content">
+  {{ .Content }}
+</div>
+
+<style>
+  .instructions-content p {
+    margin-bottom: 1em !important;
+  }
+  .instructions-content p:last-child {
+    margin-bottom: 0 !important;
+  }
+</style>
 
   <!-- PERSONAL NOTES -->
 {{- if .Params.notes }}
