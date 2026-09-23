@@ -45,6 +45,12 @@ notes: |-
   Made double. V good. Didn’t add much salt except at the start. Used salted butter though.
 
   Need to find a better method for blending then straining then reblending with more water. Stand blender is apparently the way
+
+  Sept 22 2026
+
+  Made triple. 2 cans of 28oz plum tomaotes and juices. Maybe a bit too much liquid. Maybe try diced? Each can makes 500g of plum tomatoes though, good to know.
+
+  Used regular chili powder for marinade then 2tbsp kashmiri and 1tbsp chili powder for the sauce. Don' waste time straining, just blend a few minutes in vitamix and put back in pot. So much less mess and there waste barely anything left in the strainer.
 tags:
   - Indian
   - Dinner
